@@ -17,7 +17,7 @@ public class HomeExoTest {
 	
 	static List<Integer> listData ;
     static List<List<Integer>> partititions ;
-	static int limit=0;
+	int limit=0;
 
 	@BeforeClass
 	public static void setupTest() {
