@@ -13,7 +13,7 @@ public class HomeExo {
 	// Fonction principale
 	
 	/**
-	 * @param  nums  contient la liste principale 
+	 * @param  nums  contient 
 	 * @param  limit est la taille de sous partition
 	 * @return list des sous partition
 	 */
