@@ -26,7 +26,7 @@ public class HomeExoTest {
 	}
 	
 	@Test
-	public  void verifSousPartition4() {
+	public  void verifSousPartition2() {
 		 limit=2;
 	    	partititions = HomeExo.partitition(listData, limit);
 
@@ -46,5 +46,14 @@ public class HomeExoTest {
 		assertEquals( Arrays.asList(1, 2, 3),  partititions.get(0));
 		assertEquals( Arrays.asList(23),  partititions.get(2));
 	}	
+	
+	@Test
+	public  void verifNullContraint() {
+		limit=4;
+		listData=null;
+		partititions = HomeExo.partitition(listData, limit);
+		assertEquals(0, partititions.size());
+	}	
+	
 	
 }
